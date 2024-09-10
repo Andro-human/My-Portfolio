@@ -1,4 +1,4 @@
-import { Box, Button, Grid2, Typography } from "@mui/material";
+import { Box, Button, Typography } from "@mui/material";
 
 const HeroSection = () => {
   return (
@@ -7,8 +7,6 @@ const HeroSection = () => {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        height: "100vh",
-        backgroundColor: "#f8f8f8",
       }}
     >
       {/* Name Header */}
@@ -25,7 +23,6 @@ const HeroSection = () => {
             md: "38px",
           },
           margin: "1rem",
-          //   fontWeight: "500"
         }}
       >
         Animesh Sinha
@@ -46,13 +43,10 @@ const HeroSection = () => {
                 xs: "91vh",
                 sm: "auto",
             },
-        //   height: "auto"
-        //   height: "100vh"
         }}
       >
         {/* Image Section */}
-        <Grid2
-          sm={6}
+        <Box
           sx={{
             flex: 1,
             display: "flex",
@@ -61,7 +55,6 @@ const HeroSection = () => {
                 xs: "10rem",
                 sm: "30rem",
             }
-            // height: "30rem"
           }}
         >
           <img
@@ -72,11 +65,10 @@ const HeroSection = () => {
               objectFit: "cover",
             }}
           />
-        </Grid2>
+        </Box>
 
         {/* Text Section */}
-        <Grid2
-          sm={6}
+        <Box
           sx={{
             flex: 1,
             display: "flex",
@@ -84,10 +76,6 @@ const HeroSection = () => {
             alignItems: "center",
             textAlign: "center",
             justifyContent: "center",
-            // height: {
-            //     xs: "10rem",
-            //     sm: "30rem",
-            // },
             height: "30rem",
             backgroundColor: "rgb(22, 22, 22)",
             color: "white",
@@ -96,13 +84,11 @@ const HeroSection = () => {
           <Typography
             variant="h3"
             sx={{
-            //   marginBottom: "1rem",
               fontFamily: "'Righteous', serif, system-ui",
               padding: "1rem",
               fontSize: {
                 xs: "40px",
                 md: "48px",
-                // md: "28px"
               },
             }}
           >
@@ -146,7 +132,7 @@ const HeroSection = () => {
           >
             MY WORK
           </Button>
-        </Grid2>
+        </Box>
       </Box>
     </Box>
   );
