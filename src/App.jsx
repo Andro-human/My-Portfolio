@@ -3,6 +3,7 @@ import HeroSection from "./pages/HeroSection";
 import Circle from "./pages/circle";
 import About from './pages/About';
 import { useMediaQuery, useTheme } from "@mui/material";
+import Welcome from "./pages/Welcome";
 
 function App() {
   const theme = useTheme();
@@ -17,6 +18,7 @@ function App() {
               <HeroSection />
               {isLg && <Circle />}
               <About />
+              <Welcome />
             </>
           }
         />

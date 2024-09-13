@@ -11,6 +11,7 @@ const About = () => {
         flexDirection: "column",
         alignItems: "center",
         textAlign: "center",
+        margin: "1rem 0"
       }}
     >
       <Typography
@@ -71,14 +72,14 @@ const About = () => {
             alt="Education Image"
             sx={{
               width: {
-                xs: "300px",
+                xs: "250px",
                 lg: "350px",
                 "@media (min-width: 800px) and (max-width: 1000px)": {
                   width: "200px",
                 },
               },
               height: {
-                xs: "300px",
+                xs: "250px",
                 "@media (min-width: 800px) and (max-width: 1000px)": {
                   height: "200px",
                 },
@@ -186,14 +187,14 @@ const About = () => {
             alt="Work Experience Image"
             sx={{
               width: {
-                xs: "300px",
+                xs: "250px",
                 lg: "350px",
                 "@media (min-width: 800px) and (max-width: 1000px)": {
                   width: "200px",
                 },
               },
               height: {
-                xs: "300px",
+                xs: "250px",
                 "@media (min-width: 800px) and (max-width: 1000px)": {
                   height: "200px",
                 },
@@ -325,14 +326,14 @@ const About = () => {
             alt="Skills Image"
             sx={{
               width: {
-                xs: "300px",
+                xs: "250px",
                 lg: "350px",
                 "@media (min-width: 800px) and (max-width: 1000px)": {
                   width: "200px",
                 },
               },
               height: {
-                xs: "300px",
+                xs: "250px",
                 "@media (min-width: 800px) and (max-width: 1000px)": {
                   height: "200px",
                 },
