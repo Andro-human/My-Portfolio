@@ -1,12 +1,11 @@
 import { Box, Link, Typography } from "@mui/material";
-import MailIcon from "../assets/svgFiles/mailIcon.jsx";
 import GithubIcon from "../assets/svgFiles/GithubIcon.jsx";
 import LinkedIn from "../assets/svgFiles/LinkedIn.jsx";
 import X from "../assets/svgFiles/X.jsx";
-import Leetcode from "../assets/svgFiles/leetcode.jsx";
+import Leetcode from "../assets/svgFiles/Leetcode.jsx";
 import CodeChef from "../assets/svgFiles/CodeChef.jsx";
 import Hackerrank from "../assets/svgFiles/Hackerrank.jsx";
-// import Mail from '../assets/svgFiles/mail.svg'
+import MailIcon from "../assets/svgFiles/MailIcon.jsx";
 
 const iconStyles = {
   cursor: "pointer",
