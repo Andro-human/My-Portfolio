@@ -5,7 +5,7 @@ import X from "../assets/svgFiles/X.jsx";
 import Leetcode from "../assets/svgFiles/Leetcode.jsx";
 import CodeChef from "../assets/svgFiles/CodeChef.jsx";
 import Hackerrank from "../assets/svgFiles/Hackerrank.jsx";
-import MailIcon from "../assets/svgFiles/MailIcon.jsx";
+import MailIcon from "../assets/svgFiles/mailIcon.jsx";
 
 const iconStyles = {
   cursor: "pointer",
