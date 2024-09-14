@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HeroSection from "./pages/HeroSection";
-import Circle from "./pages/circle";
+import Circle from "./pages/Circle";
 import About from './pages/About';
 import { useMediaQuery, useTheme } from "@mui/material";
 import Welcome from "./pages/Welcome";
@@ -10,8 +10,8 @@ import Connect from "./pages/Connect";
 import Footer from "./pages/Footer";
 
 function App() {
-  // const theme = useTheme();
-  // const isLg = useMediaQuery(theme.breakpoints.up("lg"));
+  const theme = useTheme();
+  const isLg = useMediaQuery(theme.breakpoints.up("lg"));
   return (
     <Router>
       <Routes>
@@ -20,7 +20,7 @@ function App() {
           element={
             <>
               <HeroSection />
-              {/* {isLg && <Circle />} */}
+              {isLg && <Circle />}
               <About />
               <Welcome />
               <Projects/>
