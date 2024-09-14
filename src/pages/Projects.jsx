@@ -13,6 +13,11 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "../Swiper.css"
+import blood from '../assets/blood-bank.jpeg'
+import chat from '../assets/chat-app.png'
+import image from '../assets/image-analyzer.png'
+import mi from '../assets/mi-store.png'
+import videoBee from '../assets/videoBee.png'
 
 const CustomCard = styled(Card)({
   margin: "2rem 0rem",
@@ -99,8 +104,8 @@ const CardSlider = () => {
 
               <Box
                 component="img"
-                src="/src/assets/blood-bank.jpeg"
-                alt="Education Image"
+                src={blood}
+                alt="Blood bank image"
                 sx={{
                   width: {
                     xs: "370px",
@@ -283,8 +288,8 @@ const CardSlider = () => {
               </Typography>
               <Box
                 component="img"
-                src="/src/assets/chat-app.png"
-                alt="Education Image"
+                src={chat}
+                alt="Chat App image"
                 sx={{
                   width: {
                     xs: "370px",
@@ -467,8 +472,8 @@ const CardSlider = () => {
               </Typography>
               <Box
                 component="img"
-                src="/src/assets/image-analyzer.png"
-                alt="Education Image"
+                src={image}
+                alt="Image Analyzer"
                 sx={{
                   width: {
                     xs: "370px",
@@ -650,8 +655,8 @@ const CardSlider = () => {
               </Typography>
               <Box
                 component="img"
-                src="/src/assets/videoBee.png"
-                alt="Education Image"
+                src={videoBee}
+                alt="VideoBee Image"
                 sx={{
                   width: {
                     xs: "370px",
@@ -834,8 +839,8 @@ const CardSlider = () => {
               </Typography>
               <Box
                 component="img"
-                src="/src/assets/mi-store.png"
-                alt="Education Image"
+                src={mi}
+                alt="Mi-store image"
                 sx={{
                   width: {
                     xs: "370px",
