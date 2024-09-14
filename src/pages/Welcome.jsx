@@ -10,7 +10,7 @@ const Welcome = () => {
         width: "100%",
         alignItems: "center",
         padding: "3rem 0",
-        margin: "2rem 0"
+        margin: "2rem 0",
         // justifyContent: "center",
       }}
     >
@@ -19,22 +19,22 @@ const Welcome = () => {
           // margin: "24px",
           color: "rgb(21, 21, 21)",
           fontSize: {
-            xs:"22px",
-            md:"26px"
+            xs: "22px",
+            md: "26px",
           },
           margin: "0 0 1rem 0",
           fontFamily: "'Josefin Sans', Arial, sans-serif",
-            
         }}
       >
         Welcome to My Website
       </Typography>
       <Typography
+        align="center"
         sx={{
           color: "rgb(87, 87, 87)",
           fontSize: {
-            xs:"16px",
-            md:"20px"
+            xs: "16px",
+            md: "20px",
           },
           margin: "0.5rem 0 1rem 0",
           fontFamily: "'Josefin Sans', Arial, sans-serif",
@@ -44,6 +44,9 @@ const Welcome = () => {
       </Typography>
       <Button
         variant="contained"
+        href="https://www.linkedin.com/in/animeshsinha13/"
+        target="_blank"
+        rel="noopener noreferrer"
         sx={{
           backgroundColor: "#000000",
           fontFamily: "'Josefin Sans', Arial, sans-serif",
@@ -53,12 +56,12 @@ const Welcome = () => {
           height: "3.5rem",
           fontSize: {
             // xs: "0.8rem",
-            sm: "1rem"
+            sm: "1rem",
           },
-        "&:hover": {
-                color: "black",
-                backgroundColor: "rgb(200, 200, 200)"
-              }
+          "&:hover": {
+            color: "black",
+            backgroundColor: "rgb(200, 200, 200)",
+          },
         }}
       >
         FIND OUT MORE

@@ -4,6 +4,10 @@ import Circle from "./pages/circle";
 import About from './pages/About';
 import { useMediaQuery, useTheme } from "@mui/material";
 import Welcome from "./pages/Welcome";
+import Projects from "./pages/Projects";
+import Achievements from "./pages/Achievements";
+import Connect from "./pages/Connect";
+import Footer from "./pages/Footer";
 
 function App() {
   const theme = useTheme();
@@ -19,6 +23,10 @@ function App() {
               {isLg && <Circle />}
               <About />
               <Welcome />
+              <Projects/>
+              <Achievements />
+              <Connect />
+              <Footer />
             </>
           }
         />

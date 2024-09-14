@@ -108,6 +108,7 @@ const HeroSection = () => {
           </Typography>
           <Button
             variant="contained"
+            href="#projects"
             sx={{
               backgroundColor: "#ffffff",
               color: "#000000",
