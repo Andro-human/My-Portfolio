@@ -224,7 +224,7 @@ const CardSlider = () => {
                 | Axios | Postman{" "}
               </Typography>
               <a
-                href="https://blood-bank.animeshsinha.info"
+                href="https://blood-bank.animeshsinha.dev"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ textDecoration: "none" }}
@@ -409,7 +409,7 @@ const CardSlider = () => {
               </Typography>
 
               <a
-                href="https://chat-app.animeshsinha.info"
+                href="https://chat-app.animeshsinha.dev"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ textDecoration: "none" }}
@@ -593,7 +593,7 @@ const CardSlider = () => {
               </Typography>
 
               <a
-                href="https://image-analyzer.animeshsinha.info"
+                href="https://image-analyzer.animeshsinha.dev"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ textDecoration: "none" }}
@@ -944,7 +944,7 @@ const CardSlider = () => {
               </Typography>
 
               <a
-                href="https://mi-store.animeshsinha.info"
+                href="https://mi-store.animeshsinha.dev"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ textDecoration: "none" }}
