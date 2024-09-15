@@ -58,7 +58,7 @@ const CardSlider = () => {
         modules={[Autoplay, Pagination, Navigation, A11y]}
         spaceBetween={30}
         slidesPerView={3}
-        // autoplay={{ delay: 3000 }}
+        autoplay={{ delay: 3000 }}
         pagination={{ clickable: true }}
         navigation
         breakpoints={{
