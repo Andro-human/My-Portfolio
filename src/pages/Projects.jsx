@@ -58,7 +58,7 @@ const CardSlider = () => {
         modules={[Autoplay, Pagination, Navigation, A11y]}
         spaceBetween={30}
         slidesPerView={3}
-        autoplay={{ delay: 3000 }}
+        // autoplay={{ delay: 3000 }}
         pagination={{ clickable: true }}
         navigation
         breakpoints={{
@@ -239,6 +239,7 @@ const CardSlider = () => {
                     width: "12rem",
                     height: "3.5rem",
                     marginTop: {
+                      xs: "1rem",
                       sm: "5rem",
                       md:"5rem",
                     },
@@ -423,6 +424,7 @@ const CardSlider = () => {
                     width: "12rem",
                     height: "3.5rem",
                     marginTop: {
+                      xs: "2.3rem",
                       sm: "3.7rem",
                       md:"6.5rem",
                     },
@@ -606,6 +608,7 @@ const CardSlider = () => {
                     width: "12rem",
                     height: "3.5rem",
                     marginTop: {
+                      xs: "5rem",
                       sm: "6.5rem",
                       md:" 9.7rem",
                     },
@@ -789,6 +792,7 @@ const CardSlider = () => {
                     width: "12rem",
                     height: "3.5rem",
                     marginTop: {
+                      xs: "5rem",
                       sm: "6.5rem",
                       md: "9.7rem",
                     },
@@ -955,6 +959,7 @@ const CardSlider = () => {
                     width: "12rem",
                     height: "3.5rem",
                     marginTop: {
+                      xs: "6rem",
                       sm: "7rem",
                       md: "12.3rem",
                     },
