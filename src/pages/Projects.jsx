@@ -571,26 +571,6 @@ const CardSlider = () => {
               >
                 • Tech Stack - Next.js | MUI | Js | Google’s Gemini API.
               </Typography>
-              <Typography
-                align="center"
-                sx={{
-                  display: "block",
-                  margin: "0.5rem 0",
-                  color: "rgb(94, 94, 94)",
-                  fontWeight: "400",
-                  lineHeight: "1.5",
-                  wordWrap: "break-word",
-                  // align: "center",
-                  fontSize: {
-                    xs: "15px",
-                    sm: "17px",
-                  },
-                  fontFamily: "'Josefin Sans', Arial, sans-serif",
-                }}
-              >
-                • Tech Stack - MongoDb | Express.js | React.js | Node.js | Redux
-                | Axios | Postman{" "}
-              </Typography>
 
               <a
                 href="https://image-analyzer.animeshsinha.dev"
@@ -610,7 +590,7 @@ const CardSlider = () => {
                     marginTop: {
                       xs: "5rem",
                       sm: "6.5rem",
-                      md:" 9.7rem",
+                      md:" 10.7rem",
                     },
                     marginBottom: "1rem",
                     fontSize: {
