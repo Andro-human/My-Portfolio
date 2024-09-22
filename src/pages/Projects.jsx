@@ -588,9 +588,9 @@ const CardSlider = () => {
                     width: "12rem",
                     height: "3.5rem",
                     marginTop: {
-                      xs: "6rem",
-                      sm: "7.5rem",
-                      md:" 12.7rem",
+                      xs: "9rem",
+                      sm: "9.2rem",
+                      md:" 13.7rem",
                     },
                     marginBottom: "1rem",
                     fontSize: {
