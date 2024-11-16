@@ -2,6 +2,7 @@ import { Avatar, Box, Typography } from "@mui/material";
 import college from "../assets/college.jpeg";
 import shrinik from "../assets/shrinik.jpeg";
 import skills from "../assets/skills.webp";
+import stellar from "../assets/stellarCode.png"
 
 const About = () => {
   return (
@@ -183,7 +184,7 @@ const About = () => {
           }}
         >
           <Avatar
-            src={shrinik}
+            src={stellar}
             alt="Work Experience Image"
             sx={{
               width: {
@@ -201,6 +202,7 @@ const About = () => {
                 lg: "350px",
               },
               margin: "1rem 0",
+              background: "black"
             }}
           />
           <Typography
@@ -239,7 +241,7 @@ const About = () => {
             }}
           >
             {" "}
-            Shrinik Club
+            Stellar Code
           </Typography>
           <Typography
             sx={{
@@ -257,9 +259,8 @@ const About = () => {
             }}
           >
             {" "}
-            • Successfully organized and executed tech and gaming event for the
-            Shrink Club, attracting an impressive gathering of 250+
-            participants.
+            • Developed full-stack web applications using React, Express, Node.js, AWS DynamoDB and ECS, for Web3 projects,
+            including Dapps and DAOs.
           </Typography>
           <Typography
             sx={{
@@ -277,9 +278,8 @@ const About = () => {
             }}
           >
             {" "}
-            • Created and distributed certificates to 30+ event participants,
-            recognizing their achievements and adding value to the overall event
-            experience.
+            • Enhanced Pepe’s Frogbar, a Telegram game with over 1 million users, by building APIs, creating database tables,
+            adding features, and addressing security vulnerabilities.
           </Typography>
           <Typography
             sx={{
@@ -297,9 +297,8 @@ const About = () => {
             }}
           >
             {" "}
-            • Contributed to event planning and execution, including
-            coordinating logistics, setting up equipment, and ensuring a smooth
-            event flow
+            • Executed a project with Kraftin Tech to integrate the SanityCDN architecture, reducing load times by up to 30% and
+            increasing overall site performance metrics.
           </Typography>
         </Box>
 

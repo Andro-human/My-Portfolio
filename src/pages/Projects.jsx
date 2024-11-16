@@ -12,12 +12,12 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
-import "../Swiper.css"
-import blood from '../assets/blood-bank.jpeg'
-import chat from '../assets/chat-app.png'
-import image from '../assets/image-analyzer.png'
-import mi from '../assets/mi-store.png'
-import videoBee from '../assets/videoBee.png'
+import "../Swiper.css";
+import blood from "../assets/blood-bank.jpeg";
+import chat from "../assets/chat-app.png";
+import image from "../assets/image-analyzer.png";
+import mi from "../assets/mi-store.png";
+import videoBee from "../assets/videoBee.png";
 
 const CustomCard = styled(Card)({
   margin: "2rem 0rem",
@@ -36,29 +36,28 @@ const CustomCard = styled(Card)({
 const CardSlider = () => {
   return (
     <Box
-    id="projects"
-    sx={{
-      padding: 2
-    }}
-  >
-    <Typography
-      variant="h4"
-      align="center"
+      id="projects"
       sx={{
-        color: "rgb(89, 75, 89)",
-        fontFamily: "'Righteous', serif, system-ui",
-        marginTop: "1rem"
+        padding: 2,
       }}
     >
-      PROJECTS
-    </Typography>
-   
+      <Typography
+        variant="h4"
+        align="center"
+        sx={{
+          color: "rgb(89, 75, 89)",
+          fontFamily: "'Righteous', serif, system-ui",
+          marginTop: "1rem",
+        }}
+      >
+        PROJECTS
+      </Typography>
 
-      <Swiper 
+      <Swiper
         modules={[Autoplay, Pagination, Navigation, A11y]}
         spaceBetween={30}
         slidesPerView={3}
-        autoplay={{ delay: 3000 }}
+        // autoplay={{ delay: 3000 }}
         pagination={{ clickable: true }}
         navigation
         breakpoints={{
@@ -99,7 +98,7 @@ const CardSlider = () => {
                   fontFamily: "'Josefin Sans', Arial, sans-serif",
                 }}
               >
-                Blood Bank
+                Boond
               </Typography>
 
               <Box
@@ -116,7 +115,8 @@ const CardSlider = () => {
                     // lg: "250px",
                   },
                   margin: "1rem",
-                  boxShadow: "rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px"
+                  boxShadow:
+                    "rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px",
                 }}
               />
 
@@ -223,39 +223,75 @@ const CardSlider = () => {
                 • Tech Stack - MongoDb | Express.js | React.js | Node.js | Redux
                 | Axios | Postman{" "}
               </Typography>
-              <a
-                href="https://blood-bank.animeshsinha.dev"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{ textDecoration: "none" }}
-              >
-                <Button
-                  variant="contained"
-                  sx={{
-                    backgroundColor: "#000000",
-                    fontFamily: "'Josefin Sans', Arial, sans-serif",
-                    fontWeight: "600",
-                    borderRadius: "0",
-                    width: "12rem",
-                    height: "3.5rem",
-                    marginTop: {
-                      xs: "1rem",
-                      sm: "5rem",
-                      md:"5rem",
-                    },
-                    marginBottom: "1rem",
-                    fontSize: {
-                      sm: "1rem",
-                    },
-                    "&:hover": {
-                      color: "black",
-                      backgroundColor: "rgb(200, 200, 200)",
-                    },
-                  }}
+              <Box sx={{ display: "flex", gap: "1rem" }}>
+                <a
+                  href="https://blood-bank.animeshsinha.dev"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ textDecoration: "none" }}
                 >
-                  View Project
-                </Button>
-              </a>
+                  <Button
+                    variant="contained"
+                    sx={{
+                      backgroundColor: "#007bff",
+                      fontFamily: "'Josefin Sans', Arial, sans-serif",
+                      fontWeight: "600",
+                      borderRadius: "0",
+                      width: "10rem",
+                      height: "3rem",
+                      marginTop: {
+                        xs: "1rem",
+                        sm: "5rem",
+                        md: "5rem",
+                      },
+                      marginBottom: "1rem",
+                      fontSize: {
+                        sm: "0.9rem",
+                      },
+                      "&:hover": {
+                        color: "black",
+                        backgroundColor: "rgb(200, 200, 200)",
+                      },
+                    }}
+                  >
+                    View Project
+                  </Button>
+                </a>
+
+                <a
+                  href="https://github.com/Andro-human/Blood-Bank-Application"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ textDecoration: "none" }}
+                >
+                  <Button
+                    variant="contained"
+                    sx={{
+                      backgroundColor: "#000000",
+                      fontFamily: "'Josefin Sans', Arial, sans-serif",
+                      fontWeight: "600",
+                      borderRadius: "0",
+                      width: "10rem",
+                      height: "3rem",
+                      marginTop: {
+                        xs: "1rem",
+                        sm: "5rem",
+                        md: "5rem",
+                      },
+                      marginBottom: "1rem",
+                      fontSize: {
+                        sm: "0.9rem",
+                      },
+                      "&:hover": {
+                        color: "black",
+                        backgroundColor: "rgb(200, 200, 200)",
+                      },
+                    }}
+                  >
+                    Github
+                  </Button>
+                </a>
+              </Box>
             </CardContent>
           </CustomCard>
         </SwiperSlide>
@@ -285,7 +321,7 @@ const CardSlider = () => {
                   fontFamily: "'Josefin Sans', Arial, sans-serif",
                 }}
               >
-                Chat App
+                Chit Chat
               </Typography>
               <Box
                 component="img"
@@ -301,7 +337,8 @@ const CardSlider = () => {
                     // lg: "250px",
                   },
                   margin: "1rem",
-                  boxShadow: "rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px"
+                  boxShadow:
+                    "rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px",
                 }}
               />
 
@@ -407,40 +444,74 @@ const CardSlider = () => {
                 Tech Stack - React.js | MUI | Node.js | Express.js | MongoDb |
                 Cloudinary | Redux | Postman{" "}
               </Typography>
-
-              <a
-                href="https://chat-app.animeshsinha.dev"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{ textDecoration: "none" }}
-              >
-                <Button
-                  variant="contained"
-                  sx={{
-                    backgroundColor: "#000000",
-                    fontFamily: "'Josefin Sans', Arial, sans-serif",
-                    fontWeight: "600",
-                    borderRadius: "0",
-                    width: "12rem",
-                    height: "3.5rem",
-                    marginTop: {
-                      xs: "2.3rem",
-                      sm: "3.7rem",
-                      md:"6.5rem",
-                    },
-                    marginBottom: "1rem",
-                    fontSize: {
-                      sm: "1rem",
-                    },
-                    "&:hover": {
-                      color: "black",
-                      backgroundColor: "rgb(200, 200, 200)",
-                    },
-                  }}
+              <Box sx={{ display: "flex", gap: "1rem" }}>
+                <a
+                  href="https://chat-app.animeshsinha.dev"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ textDecoration: "none" }}
                 >
-                  View Project
-                </Button>
-              </a>
+                  <Button
+                    variant="contained"
+                    sx={{
+                      backgroundColor: "#007bff",
+                      fontFamily: "'Josefin Sans', Arial, sans-serif",
+                      fontWeight: "600",
+                      borderRadius: "0",
+                      width: "10rem",
+                      height: "3rem",
+                      marginTop: {
+                        xs: "2.3rem",
+                        sm: "3.7rem",
+                        md: "6.5rem",
+                      },
+                      marginBottom: "1rem",
+                      fontSize: {
+                        sm: "0.9rem",
+                      },
+                      "&:hover": {
+                        color: "black",
+                        backgroundColor: "rgb(200, 200, 200)",
+                      },
+                    }}
+                  >
+                    View Project
+                  </Button>
+                </a>
+                <a
+                  href="https://github.com/Andro-human/Mern-Chat-Application"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ textDecoration: "none" }}
+                >
+                  <Button
+                    variant="contained"
+                    sx={{
+                      backgroundColor: "#000000",
+                      fontFamily: "'Josefin Sans', Arial, sans-serif",
+                      fontWeight: "600",
+                      borderRadius: "0",
+                      width: "10rem",
+                      height: "3rem",
+                      marginTop: {
+                        xs: "2.3rem",
+                        sm: "3.7rem",
+                        md: "6.5rem",
+                      },
+                      marginBottom: "1rem",
+                      fontSize: {
+                        sm: "0.9rem",
+                      },
+                      "&:hover": {
+                        color: "black",
+                        backgroundColor: "rgb(200, 200, 200)",
+                      },
+                    }}
+                  >
+                    Github
+                  </Button>
+                </a>
+              </Box>
             </CardContent>
           </CustomCard>
         </SwiperSlide>
@@ -470,7 +541,7 @@ const CardSlider = () => {
                   fontFamily: "'Josefin Sans', Arial, sans-serif",
                 }}
               >
-                Image Visualizer
+                ImageVue
               </Typography>
               <Box
                 component="img"
@@ -486,8 +557,8 @@ const CardSlider = () => {
                     // lg: "250px",
                   },
                   margin: "1rem",
-                  boxShadow: "rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px"
-
+                  boxShadow:
+                    "rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px",
                 }}
               />
 
@@ -572,39 +643,75 @@ const CardSlider = () => {
                 • Tech Stack - Next.js | MUI | Js | Google’s Gemini API.
               </Typography>
 
-              <a
-                href="https://image-analyzer.animeshsinha.dev"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{ textDecoration: "none" }}
-              >
-                <Button
-                  variant="contained"
-                  sx={{
-                    backgroundColor: "#000000",
-                    fontFamily: "'Josefin Sans', Arial, sans-serif",
-                    fontWeight: "600",
-                    borderRadius: "0",
-                    width: "12rem",
-                    height: "3.5rem",
-                    marginTop: {
-                      xs: "9rem",
-                      sm: "9.2rem",
-                      md:" 13.8rem",
-                    },
-                    marginBottom: "1rem",
-                    fontSize: {
-                      sm: "1rem",
-                    },
-                    "&:hover": {
-                      color: "black",
-                      backgroundColor: "rgb(200, 200, 200)",
-                    },
-                  }}
+              <Box sx={{ display: "flex", gap: "1rem" }}>
+                <a
+                  href="https://image-analyzer.animeshsinha.dev"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ textDecoration: "none" }}
                 >
-                  View Project
-                </Button>
-              </a>
+                  <Button
+                    variant="contained"
+                    sx={{
+                      backgroundColor: "#007bff",
+                      fontFamily: "'Josefin Sans', Arial, sans-serif",
+                      fontWeight: "600",
+                      borderRadius: "0",
+                      width: "10rem",
+                      height: "3rem",
+                      marginTop: {
+                        xs: "9rem",
+                        sm: "9.2rem",
+                        md: " 13.8rem",
+                      },
+                      marginBottom: "1rem",
+                      fontSize: {
+                        sm: "0.9rem",
+                      },
+                      "&:hover": {
+                        color: "black",
+                        backgroundColor: "rgb(200, 200, 200)",
+                      },
+                    }}
+                  >
+                    View Project
+                  </Button>
+                </a>
+
+                <a
+                  href="https://github.com/Andro-human/Ai-image-analyzer"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ textDecoration: "none" }}
+                >
+                  <Button
+                    variant="contained"
+                    sx={{
+                      backgroundColor: "#000000",
+                      fontFamily: "'Josefin Sans', Arial, sans-serif",
+                      fontWeight: "600",
+                      borderRadius: "0",
+                      width: "10rem",
+                      height: "3rem",
+                      marginTop: {
+                        xs: "9rem",
+                        sm: "9.2rem",
+                        md: " 13.8rem",
+                      },
+                      marginBottom: "1rem",
+                      fontSize: {
+                        sm: "0.9rem",
+                      },
+                      "&:hover": {
+                        color: "black",
+                        backgroundColor: "rgb(200, 200, 200)",
+                      },
+                    }}
+                  >
+                    Github
+                  </Button>
+                </a>
+              </Box>
             </CardContent>
           </CustomCard>
         </SwiperSlide>
@@ -650,7 +757,8 @@ const CardSlider = () => {
                     // lg: "250px",
                   },
                   margin: "1rem",
-                  boxShadow: "rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px"
+                  boxShadow:
+                    "rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px",
                 }}
               />
 
@@ -769,8 +877,8 @@ const CardSlider = () => {
                     fontFamily: "'Josefin Sans', Arial, sans-serif",
                     fontWeight: "600",
                     borderRadius: "0",
-                    width: "12rem",
-                    height: "3.5rem",
+                    width: "10rem",
+                    height: "3rem",
                     marginTop: {
                       xs: "4.8rem",
                       sm: "6.5rem",
@@ -778,7 +886,7 @@ const CardSlider = () => {
                     },
                     marginBottom: "1rem",
                     fontSize: {
-                      sm: "1rem",
+                      sm: "0.9rem",
                     },
                     "&:hover": {
                       color: "black",
@@ -786,7 +894,7 @@ const CardSlider = () => {
                     },
                   }}
                 >
-                  View Project
+                  Github
                 </Button>
               </a>
             </CardContent>
@@ -835,7 +943,8 @@ const CardSlider = () => {
                     // lg: "250px",
                   },
                   margin: "1rem",
-                  boxShadow: "rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px"
+                  boxShadow:
+                    "rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px",
                 }}
               />
 
@@ -923,43 +1032,77 @@ const CardSlider = () => {
                 • Tech Stack - Html | Css | Js | React | Bootstrap
               </Typography>
 
-              <a
-                href="https://mi-store.animeshsinha.dev"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{ textDecoration: "none" }}
-              >
-                <Button
-                  variant="contained"
-                  sx={{
-                    backgroundColor: "#000000",
-                    fontFamily: "'Josefin Sans', Arial, sans-serif",
-                    fontWeight: "600",
-                    borderRadius: "0",
-                    width: "12rem",
-                    height: "3.5rem",
-                    marginTop: {
-                      xs: "5.8rem",
-                      sm: "7rem",
-                      md: "12.3rem",
-                    },
-                    marginBottom: "1rem",
-                    fontSize: {
-                      sm: "1rem",
-                    },
-                    "&:hover": {
-                      color: "black",
-                      backgroundColor: "rgb(200, 200, 200)",
-                    },
-                  }}
+              <Box sx={{ display: "flex", gap: "1rem" }}>
+                <a
+                  href="https://mi-store.animeshsinha.dev"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ textDecoration: "none" }}
                 >
-                  View Project
-                </Button>
-              </a>
+                  <Button
+                    variant="contained"
+                    sx={{
+                      backgroundColor: "#007bff",
+                      fontFamily: "'Josefin Sans', Arial, sans-serif",
+                      fontWeight: "600",
+                      borderRadius: "0",
+                      width: "10rem",
+                      height: "3rem",
+                      marginTop: {
+                        xs: "5.8rem",
+                        sm: "7rem",
+                        md: "12.3rem",
+                      },
+                      marginBottom: "1rem",
+                      fontSize: {
+                        sm: "0.9rem",
+                      },
+                      "&:hover": {
+                        color: "black",
+                        backgroundColor: "rgb(200, 200, 200)",
+                      },
+                    }}
+                  >
+                    View Project
+                  </Button>
+                </a>
+                <a
+                  href="https://github.com/Andro-human/mi-store-clone"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ textDecoration: "none" }}
+                >
+                  <Button
+                    variant="contained"
+                    sx={{
+                      backgroundColor: "#000000",
+                      fontFamily: "'Josefin Sans', Arial, sans-serif",
+                      fontWeight: "600",
+                      borderRadius: "0",
+                      width: "10rem",
+                      height: "3rem",
+                      marginTop: {
+                        xs: "5.8rem",
+                        sm: "7rem",
+                        md: "12.3rem",
+                      },
+                      marginBottom: "1rem",
+                      fontSize: {
+                        sm: "0.9rem",
+                      },
+                      "&:hover": {
+                        color: "black",
+                        backgroundColor: "rgb(200, 200, 200)",
+                      },
+                    }}
+                  >
+                    Github
+                  </Button>
+                </a>
+              </Box>
             </CardContent>
           </CustomCard>
         </SwiperSlide>
-        {/* Add more SwiperSlides as needed */}
       </Swiper>
     </Box>
   );
