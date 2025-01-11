@@ -5,14 +5,11 @@ import skills from "../assets/skills.webp";
 import stellar from "../assets/stellarCode.png";
 import { ThreeDCardDemo } from "../components/threeDCard";
 
-
-
 const About = () => {
   const contentArray = [
     {
       heading: "Education",
-      subheading:
-        "Bachelor of Technology in Computer Science and Engineering (AI)",
+      subheading: "BTech in Computer Science and Engineering (AI)",
       image: "college", // Replace with the actual image URL
       body: [
         " • With a degree in Computer Science, I grasped the knowledge of core subjects coupled with practical experience in full-stack web development and front-end app development.",
@@ -31,6 +28,7 @@ const About = () => {
     },
     {
       heading: "Skills",
+      subheading: " ",
       image: "skills",
       body: [
         "• I am Proficient in C/C++, Python. Skilled in front-end technologies (HTML, CSS, JavaScript, React) and Kotlin for app development.",
@@ -40,16 +38,43 @@ const About = () => {
   ];
 
   return (
-    <Box sx={{display: "flex"}}>
-    {contentArray.map((content, index) => (
-      <ThreeDCardDemo
-        key={index}
-        heading={content.heading}
-        subheading={content.subheading}
-        image={content.image}
-        body={content.body}
-      />
-    ))}
+    <Box
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        textAlign: "center",
+        margin: "1rem 0",
+      }}
+    >
+      <Typography
+        variant="h4"
+        sx={{
+          color: "rgb(89, 75, 89)",
+          fontSize: {
+            xs: "28px",
+            sm: "38px",
+            md: "45px",
+          },
+          fontWeight: "400",
+          fontFamily: "'Righteous', serif, system-ui",
+          margin: "2.5rem",
+          letterSpacing: "4px",
+        }}
+      >
+        ABOUT
+      </Typography>
+      <Box sx={{ display: "flex" }}>
+        {contentArray.map((content, index) => (
+          <ThreeDCardDemo
+            key={index}
+            heading={content.heading}
+            subheading={content.subheading}
+            image={content.image}
+            body={content.body}
+          />
+        ))}
+      </Box>
     </Box>
 
     // <Box

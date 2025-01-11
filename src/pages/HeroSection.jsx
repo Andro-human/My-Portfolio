@@ -1,4 +1,5 @@
 import { Box, Button, Typography } from "@mui/material";
+import { TypewriterEffectSmoothDemo } from "../components/TypeWriter";
 
 const HeroSection = () => {
   return (
@@ -10,7 +11,9 @@ const HeroSection = () => {
       }}
     >
       {/* Name Header */}
-      <Typography
+      <TypewriterEffectSmoothDemo />
+      
+      {/* <Typography
         variant="h4"
         sx={{
           textAlign: "center",
@@ -26,7 +29,7 @@ const HeroSection = () => {
         }}
       >
         Animesh Sinha
-      </Typography>
+      </Typography> */}
 
       {/* Main Content */}
       <Box

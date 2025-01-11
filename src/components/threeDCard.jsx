@@ -1,10 +1,7 @@
 "use client";
 
-import React from "react";
 import { CardBody, CardContainer, CardItem } from "./ui/3d-card";
-import { Link } from "react-router-dom"; // Using react-router-dom's Link for routing
 import college from "../assets/college.jpeg";
-import shrinik from "../assets/shrinik.jpeg";
 import skills from "../assets/skills.webp";
 import stellar from "../assets/stellarCode.png";
 import { Typography } from "@mui/material";
@@ -31,7 +28,7 @@ export function ThreeDCardDemo({ heading, subheading, image, body }) {
             translateZ="60"
             className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
           >
-            {subheading}
+            {subheading} ‎ 
           </CardItem>
           <CardItem translateZ="100" className="w-full mt-4 bg-white">
             <img

@@ -8,7 +8,6 @@ import Projects from "./pages/Projects";
 import Achievements from "./pages/Achievements";
 import Connect from "./pages/Connect";
 import Footer from "./pages/Footer";
-import Cards from "./pages/Cards";
 
 function App() {
   const theme = useTheme();
@@ -25,7 +24,6 @@ function App() {
               <About />
               <Welcome />
               <Projects/>
-              <Cards />
               <Achievements />
               <Connect />
               <Footer />

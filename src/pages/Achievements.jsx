@@ -1,4 +1,5 @@
 import { Box, Typography } from "@mui/material";
+import { LinkPreviewDemo } from "../components/LinkPreview";
 
 const Achievements = () => {
   return (
@@ -49,7 +50,8 @@ const Achievements = () => {
           }}
         >
           • Led team ”4BITS” to clinch the{" "}
-          <a
+
+          {/* <a
             href="https://www.linkedin.com/posts/animeshsinha13_hackathon-glbajaj-problemsolving-activity-7138107888383787008-p9cg/?utm_source=share&utm_medium=member_desktop"
             target="_blank"
             rel="noopener noreferrer"
@@ -67,7 +69,9 @@ const Achievements = () => {
           >
             first
           
-          position</a>{" "} at SRIJAN Quizathon organised by JAIPURIA Institute.
+          position</a> */}
+          <LinkPreviewDemo word="first" url="https://www.linkedin.com/feed/update/urn:li:activity:7138107888383787008/" />
+          {" "} at SRIJAN Quizathon organised by JAIPURIA Institute.
         </Typography>
         <Typography
           align="center"
@@ -95,7 +99,7 @@ const Achievements = () => {
             fontFamily: "'Josefin Sans', Arial, sans-serif",
           }}
         >
-          • Attained a max rating of <b>1804</b> on Leetcode and <b>1656</b> on Codechef and a
+          • Attained a max rating of <b>1804</b> on <LinkPreviewDemo word="Leetcode" url="https://leetcode.com/u/Androhuman/" /> and <b>1656</b> on <LinkPreviewDemo word="Codechef" url="https://www.codechef.com/users/andro_human" /> and a
           5* rating on HackerRank.
         </Typography>
       </Box>

@@ -1,4 +1,5 @@
 import { Box, Button, Typography } from "@mui/material";
+import { HeroHighlightDemo } from "../components/HeroHighlight";
 
 const Welcome = () => {
   return (
@@ -40,7 +41,8 @@ const Welcome = () => {
           fontFamily: "'Josefin Sans', Arial, sans-serif",
         }}
       >
-        Explore my work in web development and app development.
+        Explore my work in
+      <HeroHighlightDemo />
       </Typography>
       <Button
         variant="contained"
