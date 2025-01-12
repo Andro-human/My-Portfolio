@@ -1,80 +1,10 @@
+import { BackgroundBeamsWithCollision } from "./ui/background-beams-with-collision";
 import { Box, Button, Typography } from "@mui/material";
-import { TypewriterEffectSmoothDemo } from "../components/TypeWriter";
-import { BackgroundBeamsWithCollisionDemo } from "../components/BackgroundBeams";
-import { FloatingNavDemo } from "../components/FloatingNav";
 
-const HeroSection = () => {
+export function BackgroundBeamsWithCollisionDemo() {
   return (
-    <Box
-      sx={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-      }}
-    >
-      {/* Name Header */}
-      <TypewriterEffectSmoothDemo />
-      <FloatingNavDemo />
-      {/* <Typography
-        variant="h4"
-        sx={{
-          textAlign: "center",
-          marginBottom: 2,
-          fontFamily: "'Josefin Sans', Arial, sans-serif",
-          color: "rgb(89, 75, 89)",
-
-          fontSize: {
-            xs: "28px",
-            md: "38px",
-          },
-          margin: "1rem",
-        }}
-      >
-        Animesh Sinha
-      </Typography> */}
-
-      {/* Main Content */}
+    (<BackgroundBeamsWithCollision>
       <Box
-        sx={{
-          display: "flex",
-          flexDirection: {
-            xs: "column",
-            sm: "row"
-          },
-        
-          alignItems: "center",
-          width: "100%",
-           height: {
-                xs: "91vh",
-                sm: "auto",
-            },
-        }}
-      >
-        {/* Image Section */}
-        <Box
-          sx={{
-            flex: 1,
-            display: "flex",
-            justifyContent: "center",
-            height: {
-                xs: "10rem",
-                sm: "30rem",
-            }
-          }}
-        >
-          <img
-            src="https://img1.wsimg.com/isteam/ip/a13e352a-6035-4b18-a5f1-a63b97b07c5e/IMG20231108173843.jpg/:/rs=w:1920,m"
-            alt="Animesh Sinha"
-            style={{
-              width: "100%",
-              objectFit: "cover",
-            }}
-          />
-        </Box>
-
-        {/* Text Section */}
-        <BackgroundBeamsWithCollisionDemo />
-        {/* <Box
           sx={{
             flex: 1,
             display: "flex",
@@ -139,10 +69,7 @@ const HeroSection = () => {
           >
             MY WORK
           </Button>
-        </Box> */}
-      </Box>
-    </Box>
+        </Box>
+    </BackgroundBeamsWithCollision>)
   );
-};
-
-export default HeroSection;
+}

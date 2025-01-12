@@ -33,7 +33,7 @@ const Footer = () => {
         },
         fontFamily: "'Josefin Sans', Arial, sans-serif"
       }}>
-      Copyright © 2024 Animesh Sinha - All Rights Reserved.
+      Copyright © 2025 Animesh Sinha - All Rights Reserved.
       </Typography>
     </Box>
   )

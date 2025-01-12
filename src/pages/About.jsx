@@ -39,6 +39,7 @@ const About = () => {
 
   return (
     <Box
+    id="about"
       sx={{
         display: "flex",
         flexDirection: "column",

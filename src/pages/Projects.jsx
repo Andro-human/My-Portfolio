@@ -18,6 +18,7 @@ import chat from "../assets/chat-app.png";
 import image from "../assets/image-analyzer.png";
 import mi from "../assets/mi-store.png";
 import videoBee from "../assets/videoBee.png";
+import { AnimatedTestimonialsDemo } from "../components/CardCarousel";
 
 const CustomCard = styled(Card)({
   margin: "2rem 0rem",
@@ -52,8 +53,8 @@ const CardSlider = () => {
       >
         PROJECTS
       </Typography>
-
-      <Swiper
+        <AnimatedTestimonialsDemo />
+      {/* <Swiper
         modules={[Autoplay, Pagination, Navigation, A11y]}
         spaceBetween={30}
         slidesPerView={3}
@@ -1103,7 +1104,7 @@ const CardSlider = () => {
             </CardContent>
           </CustomCard>
         </SwiperSlide>
-      </Swiper>
+      </Swiper> */}
     </Box>
   );
 };

@@ -7,6 +7,8 @@ import CodeChef from "../assets/svgFiles/CodeChef.jsx";
 import Hackerrank from "../assets/svgFiles/Hackerrank.jsx";
 import MailIcon from "../assets/svgFiles/mailIcon.jsx";
 import { BackgroundBoxesDemo } from "../components/BackgroundBoxes.jsx";
+import { FloatingDockDemo } from "../components/FloatingDock.jsx";
+import { BackgroundLinesDemo } from "../components/BackgroundLines.jsx";
 
 const iconStyles = {
   cursor: "pointer",
@@ -17,7 +19,7 @@ const iconStyles = {
 
 const Connect = () => {
   return (
-    // <BackgroundBoxesDemo>
+    // <BackgroundBoxesDemo />
       <Box
         sx={{
           display: "flex",
@@ -29,6 +31,7 @@ const Connect = () => {
           zIndex: 100000
         }}
       >
+        {/* <BackgroundLinesDemo /> */}
         <Typography
           sx={{
             // margin: "24px",
@@ -43,8 +46,9 @@ const Connect = () => {
         >
           CONNECT WITH ME!
         </Typography>
+        <FloatingDockDemo />
 
-        <Box
+        {/* <Box
           sx={{
             display: "flex",
             marginTop: "2em",
@@ -90,9 +94,9 @@ const Connect = () => {
             {" "}
             <X />{" "}
           </Link>
-        </Box>
+        </Box> */}
 
-        <Box
+        {/* <Box
           sx={{
             display: "flex",
             alignItems: "center",
@@ -127,7 +131,7 @@ const Connect = () => {
           >
             <Hackerrank />
           </Link>
-        </Box>
+        </Box> */}
         {/* <BackgroundBoxesDemo /> */}
       </Box>
     // </BackgroundBoxesDemo>
