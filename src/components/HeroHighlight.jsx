@@ -18,8 +18,8 @@ export function HeroHighlightDemo() {
           duration: 0.5,
           ease: [0.4, 0.0, 0.2, 1],
         }}
-        className="text-2xl md:text-2xl lg:text-2xl font-bold text-neutral-700 dark:text-white max-w-4xl leading-relaxed lg:leading-snug text-center ">
-        <Highlight className="text-black dark:text-white">
+        className="text-2xl md:text-2xl lg:text-2xl font-bold text-neutral-700  max-w-4xl leading-relaxed lg:leading-snug text-center ">
+        <Highlight className="text-black ">
         web development and app development.
         </Highlight>
       </motion.h1>

@@ -1,4 +1,4 @@
-import { Box, Button, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import { TypewriterEffectSmoothDemo } from "../components/TypeWriter";
 import { BackgroundBeamsWithCollisionDemo } from "../components/BackgroundBeams";
 import { FloatingNavDemo } from "../components/FloatingNav";
@@ -12,26 +12,8 @@ const HeroSection = () => {
         alignItems: "center",
       }}
     >
-      {/* Name Header */}
       <TypewriterEffectSmoothDemo />
       <FloatingNavDemo />
-      {/* <Typography
-        variant="h4"
-        sx={{
-          textAlign: "center",
-          marginBottom: 2,
-          fontFamily: "'Josefin Sans', Arial, sans-serif",
-          color: "rgb(89, 75, 89)",
-
-          fontSize: {
-            xs: "28px",
-            md: "38px",
-          },
-          margin: "1rem",
-        }}
-      >
-        Animesh Sinha
-      </Typography> */}
 
       {/* Main Content */}
       <Box
@@ -72,7 +54,6 @@ const HeroSection = () => {
           />
         </Box>
 
-        {/* Text Section */}
         <BackgroundBeamsWithCollisionDemo />
         {/* <Box
           sx={{

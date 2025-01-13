@@ -51,25 +51,6 @@ const Achievements = () => {
         >
           • Led team ”4BITS” to clinch the{" "}
 
-          {/* <a
-            href="https://www.linkedin.com/posts/animeshsinha13_hackathon-glbajaj-problemsolving-activity-7138107888383787008-p9cg/?utm_source=share&utm_medium=member_desktop"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{
-              textDecoration: "none",
-              color: "#000000",
-              fontWeight: "bold"
-            }}
-            onMouseEnter={(e) => {
-                e.target.style.textDecoration = "underline";
-              }}
-              onMouseLeave={(e) => {
-                e.target.style.textDecoration = "none";
-              }}
-          >
-            first
-          
-          position</a> */}
           <LinkPreviewDemo word="first" url="https://www.linkedin.com/feed/update/urn:li:activity:7138107888383787008/" />
           {" "} at SRIJAN Quizathon organised by JAIPURIA Institute.
         </Typography>

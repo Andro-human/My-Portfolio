@@ -1,7 +1,8 @@
+/* eslint-disable react/prop-types */
 "use client";
 import { cn } from "../../lib/utils";
 import { useMotionValue, motion, useMotionTemplate, useInView } from "framer-motion";
-import React, { useRef } from "react";
+import { useRef } from "react";
 
 export const HeroHighlight = ({ children, className, containerClassName }) => {
   let mouseX = useMotionValue(0);
@@ -18,7 +19,7 @@ export const HeroHighlight = ({ children, className, containerClassName }) => {
     <div className={cn(containerClassName)} onMouseMove={handleMouseMove}>
       <div className="\" />
       <motion.div
-        className="pointer-events-none bg-dot-thick-indigo-500 dark:bg-dot-thick-indigo-500   absolute inset-0 opacity-0 transition duration-300 group-hover:opacity-100"
+        className="pointer-events-none bg-dot-thick-indigo-500 absolute inset-0 opacity-0 transition duration-300 group-hover:opacity-100"
         style={{
           WebkitMaskImage: useMotionTemplate`
             radial-gradient(
@@ -68,7 +69,7 @@ export const Highlight = ({ children, className }) => {
         display: "inline",
       }}
       className={cn(
-        `relative inline-block pb-1   px-1 rounded-lg bg-gradient-to-r from-indigo-300 to-purple-300 dark:from-indigo-500 dark:to-purple-500`,
+        `relative inline-block pb-1   px-1 rounded-lg bg-gradient-to-r from-indigo-300 to-purple-300`,
         className
       )}
     >

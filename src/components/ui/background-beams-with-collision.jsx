@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 "use client";
 import { cn } from "../../lib/utils";
 import { motion, AnimatePresence } from "framer-motion";
@@ -67,7 +68,7 @@ export const BackgroundBeamsWithCollision = ({
     (<div
       ref={parentRef}
       className={cn(
-        "h-96 md:h-[30rem] w-[50%] bg-gradient-to-b from-white to-neutral-100 dark:from-neutral-950 dark:to-neutral-800 relative flex items-center justify-center overflow-hidden",
+        "h-96 md:h-[30rem] w-[50%] bg-gradient-to-b from-white to-neutral-100 relative flex items-center justify-center overflow-hidden",
         // h-screen if you want bigger
         className
       )}>
@@ -90,6 +91,7 @@ export const BackgroundBeamsWithCollision = ({
   );
 };
 
+// eslint-disable-next-line no-unused-vars
 const CollisionMechanism = React.forwardRef(({ parentRef, containerRef, beamOptions = {} }, ref) => {
   const beamRef = useRef(null);
   const [collision, setCollision] = useState({

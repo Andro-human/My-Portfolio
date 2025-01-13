@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HeroSection from "./pages/HeroSection";
-import Circle from "./pages/Circle";
+import Circle from "./components/ui/Circle";
 import About from './pages/About';
 import { useMediaQuery, useTheme } from "@mui/material";
 import Welcome from "./pages/Welcome";

@@ -4,7 +4,6 @@ import {
   IconBrandX,
   IconBrandGmail,
   IconBrandLinkedin,
-  IconCode,
 } from "@tabler/icons-react";
 
 import Leetcode from "../assets/svgFiles/Leetcode.jsx";
@@ -16,7 +15,7 @@ export function FloatingDockDemo() {
     {
       title: "Gmail",
       icon: (
-        <IconBrandGmail className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconBrandGmail className="h-full w-full text-neutral-500 " />
       ),
       href: "mailto:hey.animeshsinha@gmail.com",
     },
@@ -24,21 +23,21 @@ export function FloatingDockDemo() {
     {
       title: "Github",
       icon: (
-        <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconBrandGithub className="h-full w-full text-neutral-500 " />
       ),
       href: "https://github.com/Andro-human",
     },
     {
       title: "Linkedin",
       icon: (
-        <IconBrandLinkedin className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconBrandLinkedin className="h-full w-full text-neutral-500 " />
       ),
       href: "https://www.linkedin.com/in/animeshsinha13/",
     },
     {
       title: "X",
       icon: (
-        <IconBrandX className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconBrandX className="h-full w-full text-neutral-500 " />
       ),
       href: "https://x.com/Andro_human",
     },
@@ -61,7 +60,6 @@ export function FloatingDockDemo() {
   return (
     <div className="flex items-center justify-center h-[5rem] w-full">
       <FloatingDock
-        // only for demo, remove for production
         mobileClassName="translate-y-20"
         items={links}
       />

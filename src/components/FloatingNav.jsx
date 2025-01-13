@@ -6,18 +6,18 @@ export function FloatingNavDemo() {
     {
       name: "Home",
       link: "#",
-      icon: <IconHome className="h-4 w-4 text-neutral-500 dark:text-white" />,
+      icon: <IconHome className="h-4 w-4 text-neutral-500 " />,
     },
     {
       name: "About",
       link: "#about",
-      icon: <IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />,
+      icon: <IconUser className="h-4 w-4 text-neutral-500 " />,
     },
     {
       name: "Projects",
       link: "#projects",
       icon: (
-        <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />
+        <IconMessage className="h-4 w-4 text-neutral-500 " />
       ),
     },
   ];
