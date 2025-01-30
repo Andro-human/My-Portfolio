@@ -24,6 +24,10 @@ import video3 from "../assets/videoBee/image3.jpg";
 import mi1 from "../assets/miStore/image1.png";
 import mi2 from "../assets/miStore/image2.png";
 import mi3 from "../assets/miStore/image3.png";
+import peakly1 from "../assets/peakly/image1.png";
+import peakly2 from "../assets/peakly/image2.png";
+import peakly3 from "../assets/peakly/image3.png";
+
 export function AnimatedModalDemo({ data }) {
   const imageMap = {
     Boond: [blood1, blood2, blood3],
@@ -31,6 +35,7 @@ export function AnimatedModalDemo({ data }) {
     ImageVue: [image1, image2, image3],
     VideoBee: [video1, video2, video3],
     "Mi Store Clone": [mi1, mi2, mi3],
+    Peakly: [peakly1, peakly2, peakly3],
   };
   return (
     <div style={{ zIndex: 100000 }}>

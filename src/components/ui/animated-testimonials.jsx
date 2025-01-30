@@ -72,7 +72,6 @@ export const AnimatedTestimonials = ({ testimonials, autoplay = false }) => {
                     alt={testimonial.name + "image"}
                     draggable={false}
                     className="h-full w-full rounded-3xl object-cover object-center"
-                    
                   />
                 </motion.div>
               ))}
@@ -144,11 +143,10 @@ export const AnimatedTestimonials = ({ testimonials, autoplay = false }) => {
             >
               <IconArrowRight className="h-5 w-5 text-black group-hover/button:-rotate-12 transition-transform duration-300" />
             </button>
-            <div style={{flexGrow:1}} />
+            <div style={{ flexGrow: 1 }} />
             <AnimatedModalDemo data={testimonials[active]} />
           </div>
-          <div>
-          </div>
+          <div></div>
         </div>
       </div>
     </div>

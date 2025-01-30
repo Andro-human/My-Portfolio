@@ -4,9 +4,23 @@ import chat from "../assets/ChatApp/dp.png";
 import image from "../assets/imageVue/dp.png";
 import mi from "../assets/miStore/dp.png";
 import videoBee from "../assets/videoBee/dp.png";
-
+import peakly from "../assets/peakly/dp.png";
 export function AnimatedTestimonialsDemo() {
   const testimonials = [
+    {
+      quote:
+        "Peakly is a decentralized platform where users can create and participate in predictions on real-world events, leveraging blockchain technology for transparency and security.",
+      name: "Peakly",
+      designation: "Decentralized Wagering Platform",
+      src: peakly,
+      data: [
+        "• Developed a decentralized block-chain based platform that allows users to participate in, create, and wager on any real-world topic.",
+        "• Built a responsive and interative frontend with Next.js, Tailwind CSS, Accentinity UI, ensuring a modern and accessible user interface.",
+        "• Tested blockchain functionalities with Remix IDE and successfully deployed it on Vercel and ThirdWeb.",
+      ],
+      live: "https://peakly.animeshsinha.dev/",
+      github: "https://github.com/Andro-human/Peakly",
+    },
     {
       quote:
         "Boond is a web app built with Node.js and React to simplify blood donation and inventory management, featuring AI-driven predictive analytics for demand forecasting.",
@@ -21,7 +35,7 @@ export function AnimatedTestimonialsDemo() {
         "Tech Stack - MongoDb | Express.js | React.js | Node.js | Redux | Postman",
       ],
       live: "https://blood-bank.animeshsinha.dev/",
-      github: "https://github.com/Andro-human/Blood-Bank-Application"
+      github: "https://github.com/Andro-human/Blood-Bank-Application",
     },
     {
       quote:
@@ -37,7 +51,7 @@ export function AnimatedTestimonialsDemo() {
         "Tech Stack - React.js | MUI | Node.js | Express.js | MongoDb | Cloudinary | Redux | Postman",
       ],
       live: "https://chat-app.animeshsinha.dev/",
-      github: "https://github.com/Andro-human/Mern-Chat-Application"
+      github: "https://github.com/Andro-human/Mern-Chat-Application",
     },
     {
       quote:
@@ -52,7 +66,7 @@ export function AnimatedTestimonialsDemo() {
         "Tech Stack - Next.js | MUI | Js | Google’s Gemini API",
       ],
       live: "https://imagevue.animeshsinha.dev/",
-      github: "https://github.com/Andro-human/ImageVue"
+      github: "https://github.com/Andro-human/ImageVue",
     },
     {
       quote:
@@ -67,7 +81,7 @@ export function AnimatedTestimonialsDemo() {
         "• Efficiently managed data retrieval from local storage using a cursor and adapter for seamless video organization and presentation.",
         "Tech Stack - Kotlin | Git | Android Studio",
       ],
-      github: "https://github.com/Andro-human/VideoBee"
+      github: "https://github.com/Andro-human/VideoBee",
     },
     {
       quote:
@@ -82,7 +96,7 @@ export function AnimatedTestimonialsDemo() {
         "Tech Stack - Html | Css | Js | React | Bootstrap",
       ],
       live: "https://mi-store.animeshsinha.dev/",
-      github: "https://github.com/Andro-human/mi-store-clone"
+      github: "https://github.com/Andro-human/mi-store-clone",
     },
   ];
 
