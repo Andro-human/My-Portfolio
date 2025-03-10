@@ -21,49 +21,19 @@ export const FloatingDock = ({ items, desktopClassName, mobileClassName }) => {
 };
 
 const FloatingDockMobile = ({ items, className }) => {
-  const [open, setOpen] = useState(false);
   return (
     <div className={cn("relative block md:hidden", className)}>
-      <AnimatePresence>
-        {open && (
-          <motion.div
-            layoutId="nav"
-            className="absolute bottom-full mb-2 inset-x-0 flex flex-col gap-2"
+      <div className="absolute bottom-full m-3 inset-x-0 flex flex-row gap-5">
+        {items.map((item, idx) => (
+          <Link
+            to={item.href}
+            key={idx}
+            className="h-10 w-10 rounded-full flex items-center justify-center"
           >
-            {items.map((item, idx) => (
-              <motion.div
-                key={item.title}
-                initial={{ opacity: 0, y: 10 }}
-                animate={{
-                  opacity: 1,
-                  y: 0,
-                }}
-                exit={{
-                  opacity: 0,
-                  y: 10,
-                  transition: {
-                    delay: idx * 0.05,
-                  },
-                }}
-                transition={{ delay: (items.length - 1 - idx) * 0.05 }}
-              >
-                <Link
-                  to={item.href}
-                  className="h-10 w-10 rounded-full  flex items-center justify-center"
-                >
-                  <div className="h-4 w-4">{item.icon}</div>
-                </Link>
-              </motion.div>
-            ))}
-          </motion.div>
-        )}
-      </AnimatePresence>
-      <button
-        onClick={() => setOpen(!open)}
-        className="h-10 w-10 rounded-full flex items-center justify-center"
-      >
-        <IconLayoutNavbarCollapse className="h-5 w-5 text-neutral-500 " />
-      </button>
+            <div className="h-6 w-6 ">{item.icon}</div>
+          </Link>
+        ))}
+      </div>
     </div>
   );
 };
@@ -132,8 +102,8 @@ function IconContainer({ mouseX, title, icon, href }) {
     <Link
       to={href}
       onClick={(e) => {
-        e.preventDefault(); 
-        window.open(href, "_blank"); 
+        e.preventDefault();
+        window.open(href, "_blank");
       }}
     >
       <motion.div

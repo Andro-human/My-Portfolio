@@ -1,4 +1,9 @@
-@font-face {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face 
+{
   font-family: 'Righteous';
   font-style: normal;
   font-weight: 400;
@@ -101,6 +106,3 @@
   margin: 0;
   padding: 0;
 }
-@tailwind base;
-@tailwind components;
-@tailwind utilities;

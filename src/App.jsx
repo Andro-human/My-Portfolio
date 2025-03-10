@@ -1,13 +1,15 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HeroSection from "./pages/HeroSection";
 import Circle from "./components/ui/Circle";
-import About from './pages/About';
 import { useMediaQuery, useTheme } from "@mui/material";
 import Welcome from "./pages/Welcome";
 import Projects from "./pages/Projects";
 import Achievements from "./pages/Achievements";
 import Connect from "./pages/Connect";
 import Footer from "./pages/Footer";
+import { TimelineDemo } from "./pages/Timeline";
+import SkillsSection from "./pages/Skills";
+import Certifications from "./pages/Certifications";
 
 function App() {
   const theme = useTheme();
@@ -21,10 +23,13 @@ function App() {
             <>
               <HeroSection />
               {isLg && <Circle />}
-              <About />
+              <TimelineDemo />
+              {/* <About /> */}
               <Welcome />
-              <Projects/>
+              <Projects />
+              <SkillsSection />
               <Achievements />
+              <Certifications />
               <Connect />
               <Footer />
             </>

@@ -14,31 +14,23 @@ export function FloatingDockDemo() {
   const links = [
     {
       title: "Gmail",
-      icon: (
-        <IconBrandGmail className="h-full w-full text-neutral-500 " />
-      ),
+      icon: <IconBrandGmail className="h-full w-full text-neutral-500 " />,
       href: "mailto:hey.animeshsinha@gmail.com",
     },
 
     {
       title: "Github",
-      icon: (
-        <IconBrandGithub className="h-full w-full text-neutral-500 " />
-      ),
+      icon: <IconBrandGithub className="h-full w-full text-neutral-500 " />,
       href: "https://github.com/Andro-human",
     },
     {
       title: "Linkedin",
-      icon: (
-        <IconBrandLinkedin className="h-full w-full text-neutral-500 " />
-      ),
+      icon: <IconBrandLinkedin className="h-full w-full text-neutral-500 " />,
       href: "https://www.linkedin.com/in/animeshsinha13/",
     },
     {
       title: "X",
-      icon: (
-        <IconBrandX className="h-full w-full text-neutral-500 " />
-      ),
+      icon: <IconBrandX className="h-full w-full text-neutral-500 " />,
       href: "https://x.com/Andro_human",
     },
     {
@@ -60,7 +52,7 @@ export function FloatingDockDemo() {
   return (
     <div className="flex items-center justify-center h-[5rem] w-full">
       <FloatingDock
-        mobileClassName="translate-y-20"
+        mobileClassName="translate-x-[-10rem] translate-y-10"
         items={links}
       />
     </div>

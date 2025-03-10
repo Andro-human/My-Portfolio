@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 "use client";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import {
   motion,
   AnimatePresence,
@@ -14,27 +14,27 @@ export const FloatingNav = ({ navItems, className }) => {
   const { scrollYProgress } = useScroll();
 
   const [visible, setVisible] = useState(false);
+  console.log("visible", visible);
+  const timeoutRef = useRef(null);
 
   useMotionValueEvent(scrollYProgress, "change", (current) => {
     if (typeof current === "number") {
-      let direction = current - scrollYProgress.getPrevious();
+      setVisible(true);
 
-      if (scrollYProgress.get() < 0.05) {
-        setVisible(false);
-      } else {
-        if (direction < 0) {
-          setVisible(true);
-        } else {
-          setVisible(false);
-        }
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current);
       }
+
+      timeoutRef.current = setTimeout(() => {
+        setVisible(false);
+      }, 2000);
     }
   });
 
   const handleContactClick = () => {
     window.open("https://www.linkedin.com/in/animeshsinha13/", "_blank");
   };
-  
+
   return (
     <AnimatePresence mode="wait">
       <motion.div
@@ -58,7 +58,7 @@ export const FloatingNav = ({ navItems, className }) => {
           <Button
             key={`link-${idx}`}
             href={navItem.link} // Use 'to' instead of 'href'
-            style={{color: "black"}}
+            style={{ color: "black" }}
           >
             <span className="block sm:hidden">{navItem.icon}</span>
             <span className="hidden sm:block text-sm">{navItem.name}</span>
