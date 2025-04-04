@@ -34,8 +34,8 @@ export function AnimatedTestimonialsDemo() {
         "• Designed and implemented RESTful APIs, reducing server response time by 15% and enhancing user experience.",
         "Tech Stack - MongoDb | Express.js | React.js | Node.js | Redux | Postman",
       ],
-      live: "https://blood-bank.animeshsinha.dev/",
-      github: "https://github.com/Andro-human/Blood-Bank-Application",
+      live: "https://boond.animeshsinha.dev",
+      github: "https://github.com/Andro-human/Boond",
     },
     {
       quote:
@@ -50,8 +50,8 @@ export function AnimatedTestimonialsDemo() {
         "• Implemented Redux for state management, including Redux RTK Query for efficient data fetching and caching.",
         "Tech Stack - React.js | MUI | Node.js | Express.js | MongoDb | Cloudinary | Redux | Postman",
       ],
-      live: "https://chat-app.animeshsinha.dev/",
-      github: "https://github.com/Andro-human/Mern-Chat-Application",
+      live: "https://chit-chat.animeshsinha.dev/",
+      github: "https://github.com/Andro-human/Chit-Chat",
     },
     {
       quote:
