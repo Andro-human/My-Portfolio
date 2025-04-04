@@ -28,11 +28,11 @@ export function TimelineDemo() {
           <div className="text-neutral-800 space-y-3 mb-12">
             <p>
               • Fixed UI/UX bugs and rebuilt legacy components from scratch to
-              enhance performance, maintainability, and user experience.
+              enhance performance and maintainability.
             </p>
             <p>
-              • Developed and integrated new features across the stack,
-              including frontend enhancements and backend GraphQL API fixes.
+              • Developed and integrated new features, including frontend
+              enhancements and backend GraphQL fixes.
             </p>
             <p>
               • Implemented pagination in key components, reducing data load
