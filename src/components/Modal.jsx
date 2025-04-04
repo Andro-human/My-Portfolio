@@ -9,24 +9,24 @@ import {
   ModalTrigger,
 } from "./ui/animated-modal";
 import { motion } from "framer-motion";
-import blood1 from "../assets/bloodbank/image1.png";
-import blood2 from "../assets/bloodbank/image2.png";
-import blood3 from "../assets/bloodbank/image3.png";
-import chat1 from "../assets/ChatApp/image1.png";
-import chat2 from "../assets/ChatApp/image2.png";
-import chat3 from "../assets/ChatApp/image3.png";
-import image1 from "../assets/imageVue/image1.png";
-import image2 from "../assets/imageVue/image2.png";
-import image3 from "../assets/imageVue/image3.png";
-import video1 from "../assets/videoBee/image1.jpg";
-import video2 from "../assets/videoBee/image2.jpg";
-import video3 from "../assets/videoBee/image3.jpg";
-import mi1 from "../assets/miStore/image1.png";
-import mi2 from "../assets/miStore/image2.png";
-import mi3 from "../assets/miStore/image3.png";
-import peakly1 from "../assets/peakly/image1.png";
-import peakly2 from "../assets/peakly/image2.png";
-import peakly3 from "../assets/peakly/image3.png";
+import blood1 from "../assets/bloodbank/image1.webp";
+import blood2 from "../assets/bloodbank/image2.webp";
+import blood3 from "../assets/bloodbank/image3.webp";
+import chat1 from "../assets/ChatApp/image1.webp";
+import chat2 from "../assets/ChatApp/image2.webp";
+import chat3 from "../assets/ChatApp/image3.webp";
+import image1 from "../assets/imageVue/image1.webp";
+import image2 from "../assets/imageVue/image2.webp";
+import image3 from "../assets/imageVue/image3.webp";
+import video1 from "../assets/videoBee/image1.webp";
+import video2 from "../assets/videoBee/image2.webp";
+import video3 from "../assets/videoBee/image3.webp";
+import mi1 from "../assets/miStore/image1.webp";
+import mi2 from "../assets/miStore/image2.webp";
+import mi3 from "../assets/miStore/image3.webp";
+import peakly1 from "../assets/peakly/image1.webp";
+import peakly2 from "../assets/peakly/image2.webp";
+import peakly3 from "../assets/peakly/image3.webp";
 
 export function AnimatedModalDemo({ data }) {
   const imageMap = {

@@ -1,10 +1,10 @@
 import { AnimatedTestimonials } from "./ui/animated-testimonials";
-import blood from "../assets/bloodbank/dp.jpeg";
-import chat from "../assets/ChatApp/dp.png";
-import image from "../assets/imageVue/dp.png";
-import mi from "../assets/miStore/dp.png";
-import videoBee from "../assets/videoBee/dp.png";
-import peakly from "../assets/peakly/dp.png";
+import blood from "../assets/bloodbank/dp.webp";
+import chat from "../assets/ChatApp/dp.webp";
+import image from "../assets/imageVue/dp.webp";
+import mi from "../assets/miStore/dp.webp";
+import videoBee from "../assets/videoBee/dp.webp";
+import peakly from "../assets/peakly/dp.webp";
 export function AnimatedTestimonialsDemo() {
   const testimonials = [
     {

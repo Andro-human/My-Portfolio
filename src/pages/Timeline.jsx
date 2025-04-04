@@ -1,6 +1,8 @@
 import { Timeline } from "../components/ui/timeline";
-import stellar from "../assets/about/stellarCode.png";
-import college from "../assets/about/college.jpeg";
+import stellar from "../assets/about/stellarCode.webp";
+import college from "../assets/about/college.webp";
+import shrinik from "../assets/about/shrinik.webp";
+
 export function TimelineDemo() {
   const data = [
     {
@@ -20,17 +22,21 @@ export function TimelineDemo() {
               <p className="text-neutral-600 text-lg">
                 Software Developer Intern (Full Stack)
               </p>
-              <p className="text-neutral-500 text-sm">Feb 2024 - Present</p>
+              <p className="text-neutral-500 text-sm">Feb 2025 - Present</p>
             </div>
           </div>
           <div className="text-neutral-800 space-y-3 mb-12">
             <p>
-              • Developed and maintained the frontend with React, TypeScript and
-              Redux, fixing bugs and optimizing performance.
+              • Fixed UI/UX bugs and rebuilt legacy components from scratch to
+              enhance performance, maintainability, and user experience.
             </p>
             <p>
-              • Improved the backend built using Node.js and GraphQL, fixing
-              issues, optimizing APIs, and enhancing data flow.
+              • Developed and integrated new features across the stack,
+              including frontend enhancements and backend GraphQL API fixes.
+            </p>
+            <p>
+              • Implemented pagination in key components, reducing data load
+              time by up to 30%.
             </p>
             <p className="text-neutral-600 pt-2 font-medium">
               Tech Stack - React.js | Node.js | GraphQL | TypeScript | Redux
@@ -53,7 +59,7 @@ export function TimelineDemo() {
               <p className="text-neutral-500 text-sm">Sep 2024 - Nov 2024</p>
             </div>
           </div>
-          <div className="text-neutral-800 space-y-3">
+          <div className="text-neutral-800 space-y-3 mb-12">
             <p>
               • Improved full-stack web applications using React, Express,
               Node.js, AWS DynamoDB and ECS, for Web3 projects, including Dapps
@@ -71,6 +77,43 @@ export function TimelineDemo() {
             </p>
             <p className="text-neutral-600 pt-2 font-medium">
               Tech Stack - React.js | Node.js | AWS ECS | DynamoDB | Javascript
+            </p>
+          </div>
+
+          <div className="flex items-center gap-6 mb-6">
+            <img
+              src={shrinik}
+              alt="Shrinik Club"
+              className="w-16 h-16 rounded-lg object-contain"
+            />
+            <div>
+              <h3 className="text-neutral-800 text-3xl font-semibold">
+                Shrinik Club
+              </h3>
+              <p className="text-neutral-600 text-lg">Technical Team Member</p>
+              <p className="text-neutral-500 text-sm">Jan 2024 - Feb 2024</p>
+            </div>
+          </div>
+
+          <div className="text-neutral-800 space-y-3">
+            <p>
+              • Successfully organized and executed tech and gaming event for
+              the Shrink Club, attracting an impressive gathering of 250+
+              participants.
+            </p>
+            <p>
+              • Created and distributed certificates to 30+ event participants,
+              recognizing their achievements and adding value to the overall
+              event experience.
+            </p>
+            <p>
+              • Contributed to event planning and execution, including
+              coordinating logistics, setting up equipment, and ensuring a
+              smooth event flow
+            </p>
+            <p className="text-neutral-600 pt-2 font-medium">
+              Skills - Problem Solving | Teamwork | Communication | Event
+              Planning
             </p>
           </div>
         </div>
@@ -105,13 +148,7 @@ export function TimelineDemo() {
               development.
             </p>
             <p>
-              • Served as a Technical Team Member in Shrink Club, where I led
-              the planning and execution of hackathons and gaming events by
-              handling technical setups, coordinating logistics, and ensuring
-              smooth execution, fostering a dynamic tech community.
-            </p>
-            <p>
-              • Strengthened my problem-solving skills by solving 800+ coding
+              • Strengthened my problem-solving skills by solving 1000+ coding
               problems across various platforms and actively participated in
               hackathons and coding competitions, collaborating with teams to
               build innovative solutions under time constraints.
