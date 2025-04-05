@@ -8,6 +8,7 @@ export function FloatingNavDemo() {
     },
     {
       name: "Experience",
+      link: "#experience",
     },
     {
       name: "Projects",

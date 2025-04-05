@@ -66,7 +66,7 @@ export function TimelineDemo() {
               and DAOs.
             </p>
             <p>
-              • Enhanced Pepe's Frogbar, a Telegram game with over 1 million
+              • Enhanced Pepe&apos;s Frogbar, a Telegram game with over 1 million
               users, by building APIs, creating database tables, adding
               features, and addressing security vulnerabilities.
             </p>
@@ -91,7 +91,7 @@ export function TimelineDemo() {
                 Shrinik Club
               </h3>
               <p className="text-neutral-600 text-lg">Technical Team Member</p>
-              <p className="text-neutral-500 text-sm">Jan 2024 - Feb 2024</p>
+              <p className="text-neutral-500 text-sm">Jan 2023 - Sep 2023</p>
             </div>
           </div>
 

@@ -3,10 +3,7 @@ import {
   FaNodeJs,
   FaPython,
   FaGitAlt,
-  FaHtml5,
-  FaCss3Alt,
   FaDatabase,
-  FaTypo3,
 } from "react-icons/fa";
 import {
   SiMongodb,
@@ -21,7 +18,6 @@ import {
 } from "react-icons/si";
 import { motion } from "framer-motion";
 import { FaC, FaReacteurope } from "react-icons/fa6";
-import { BiLogoPostgresql } from "react-icons/bi";
 
 const SKILL_LEVELS = {
   PROFICIENT: { label: "Proficient", color: "bg-red-500" },
@@ -124,74 +120,78 @@ const skillCategories = {
     {
       name: "Postman",
       icon: <SiPostman />,
-      color: "text-red-500",
+      color: "text-orange-500",
       proficiency: SKILL_LEVELS.PROFICIENT,
     },
     {
       name: "Vercel",
       icon: <SiVercel />,
-      color: "text-red-500",
+      color: "text-black",
       proficiency: SKILL_LEVELS.PROFICIENT,
     },
   ],
 };
 
+const getCategoryIcon = (category) => {
+  switch (category) {
+    case "languages":
+      return "💻";
+    case "frameworks":
+      return "⚙️";
+    case "databases":
+      return "🗄️";
+    case "tools":
+      return "🔧";
+    default:
+      return "✨";
+  }
+};
+
 const SkillsSection = () => {
   return (
-    <section className="py-16 bg-[#f6f6f6]" id="skills">
-      <div className="max-w-6xl mx-auto px-4">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-12"
-        >
-          <h2 className="text-4xl font-bold text-gray-800 mb-4">
-            Technical Expertise
-          </h2>
-          <p className="text-gray-600  max-w-2xl mx-auto">
-            A showcase of my technical skills and proficiency levels
-          </p>
-        </motion.div>
+    <section id="skills" className="py-12 bg-gray-50">
+      <div className="container mx-auto px-4 max-w-5xl">
+        <h2 className="text-3xl font-bold text-center text-gray-800 mb-8">
+          Skills & Technologies
+        </h2>
 
-        {Object.entries(skillCategories).map(([category, skills]) => (
-          <div key={category} className="mb-12">
-            <h3 className="text-2xl font-semibold text-gray-800 mb-6 capitalize">
-              {category}
-            </h3>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {skills.map((skill, index) => (
-                <motion.div
-                  initial={{ opacity: 0, x: index % 2 === 0 ? -20 : 20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                  key={index}
-                  className="bg-white rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow"
-                >
-                  <div className="flex items-center space-x-4">
-                    <div className={`text-3xl ${skill.color}`}>
+        <div className="space-y-8">
+          {Object.entries(skillCategories).map(([category, skills]) => (
+            <div key={category} className="bg-white rounded-lg p-6 shadow-sm">
+              {/* <div className="flex items-center gap-4"> */}
+              {/* <span className="text-2xl">{getCategoryIcon(category)}</span> */}
+              <h3 className="text-xl font-semibold capitalize text-gray-700 mb-4 border-b pb-2">
+                {category} {getCategoryIcon(category)}
+              </h3>
+              {/* </div> */}
+
+              <div className="flex flex-wrap gap-3">
+                {skills.map((skill, index) => (
+                  <motion.div
+                    key={index}
+                    initial={{ opacity: 0, y: 10 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.3, delay: index * 0.05 }}
+                    viewport={{ once: true }}
+                    className="flex items-center gap-2 bg-gray-50 px-3 py-2 rounded-lg"
+                  >
+                    <span className={`text-xl ${skill.color}`}>
                       {skill.icon}
-                    </div>
-                    <div className="flex-1">
-                      <div className="flex justify-between items-center mb-2">
-                        <h3 className="text-lg font-semibold text-gray-800">
-                          {skill.name}
-                        </h3>
-                        <span
-                          className={`px-3 py-1 rounded-full text-xs font-medium text-white ${skill.proficiency.color}`}
-                        >
-                          {skill.proficiency.label}
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </motion.div>
-              ))}
+                    </span>
+                    <span className="text-gray-700 font-medium">
+                      {skill.name}
+                    </span>
+                    <span
+                      className={`ml-1 px-2 py-0.5 text-xs text-white rounded-full ${skill.proficiency.color}`}
+                    >
+                      {skill.proficiency.label}
+                    </span>
+                  </motion.div>
+                ))}
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
   );

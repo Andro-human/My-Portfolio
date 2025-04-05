@@ -1,5 +1,4 @@
 import { Box, Typography } from "@mui/material";
-import { LinkPreviewDemo } from "../components/LinkPreview";
 
 const Achievements = () => {
   return (
@@ -47,12 +46,8 @@ const Achievements = () => {
             fontFamily: "'Josefin Sans', Arial, sans-serif",
           }}
         >
-          • Led team ”4BITS” to clinch the{" "}
-          <LinkPreviewDemo
-            word="first"
-            url="https://www.linkedin.com/feed/update/urn:li:activity:7138107888383787008/"
-          />{" "}
-          at SRIJAN Quizathon organised by JAIPURIA Institute.
+          • Led team ”4BITS” to clinch the <b>first position</b> at SRIJAN
+          Quizathon organised by JAIPURIA Institute.
         </Typography>
         <Typography
           align="center"
@@ -66,7 +61,7 @@ const Achievements = () => {
             fontFamily: "'Josefin Sans', Arial, sans-serif",
           }}
         >
-          • Solved <b>800+</b> problems across all coding platforms.
+          • Solved <b>1000+</b> problems across all coding platforms.
         </Typography>
         <Typography
           align="center"
@@ -80,17 +75,8 @@ const Achievements = () => {
             fontFamily: "'Josefin Sans', Arial, sans-serif",
           }}
         >
-          • Attained a max rating of <b>1804</b> on{" "}
-          <LinkPreviewDemo
-            word="Leetcode"
-            url="https://leetcode.com/u/Androhuman/"
-          />{" "}
-          and <b>1656</b> on{" "}
-          <LinkPreviewDemo
-            word="Codechef"
-            url="https://www.codechef.com/users/andro_human"
-          />{" "}
-          and a 5* rating on HackerRank.
+          • Attained a max rating of <b>1863</b> on Leetcode and <b>1656</b> on
+          Codechef and a 5* rating on HackerRank.
         </Typography>
       </Box>
     </Box>
